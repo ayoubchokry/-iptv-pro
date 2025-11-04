@@ -1,0 +1,277 @@
+/* css/themes/light.css */
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #6e9cd3;
+    --accent-color: #ff6b6b;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+    --info-color: #17a2b8;
+    
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+    
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #e9ecef;
+    --bg-tertiary: #ffffff;
+    
+    --card-bg: #ffffff;
+    --card-hover: #f8f9fa;
+    --header-bg: rgba(255, 255, 255, 0.9);
+    --footer-bg: rgba(255, 255, 255, 0.9);
+    
+    --border-color: #dee2e6;
+    --border-hover: #adb5bd;
+    
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    --backdrop-blur: blur(15px);
+    
+    --gradient-primary: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    --gradient-accent: linear-gradient(135deg, var(--accent-color), #ff8e8e);
+    --gradient-card: linear-gradient(135deg, #ffffff, #f8f9fa);
+}
+
+body {
+    background: var(--gradient-primary);
+    color: var(--text-primary);
+}
+
+/* الهيدر */
+.header {
+    background: var(--header-bg);
+    backdrop-filter: var(--backdrop-blur);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* بطاقات القنوات */
+.channel-card {
+    background: var(--card-bg);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.channel-card:hover {
+    background: var(--card-hover);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.channel-logo {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+/* أزرار التصنيفات */
+.category-btn {
+    background: var(--card-bg);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+/* حقل البحث */
+.search-box input {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.search-box input:focus {
+    background: white;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2), var(--shadow-md);
+}
+
+.search-box input::placeholder {
+    color: var(--text-muted);
+}
+
+/* المشغل */
+.player-modal {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.player-controls {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: var(--backdrop-blur);
+    border-top: 1px solid var(--border-color);
+}
+
+.quality-select {
+    background: white;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.close-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+}
+
+.close-btn:hover {
+    background: #ff5252;
+}
+
+/* الفوتر */
+.footer {
+    background: var(--footer-bg);
+    backdrop-filter: var(--backdrop-blur);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+/* أزرار المفضلة */
+.favorite-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+}
+
+.favorite-btn.active {
+    color: var(--accent-color);
+}
+
+.favorite-btn:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+/* حالات القنوات */
+.channel-status.online {
+    color: var(--success-color);
+}
+
+.channel-status.offline {
+    color: var(--warning-color);
+}
+
+.channel-quality {
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.channel-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* الإشعارات */
+.notification {
+    background: var(--bg-tertiary);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+    color: var(--text-primary);
+}
+
+.notification.success {
+    background: var(--success-color);
+    color: white;
+}
+
+.notification.error {
+    background: var(--error-color);
+    color: white;
+}
+
+.notification.warning {
+    background: var(--warning-color);
+    color: white;
+}
+
+.notification.info {
+    background: var(--info-color);
+    color: white;
+}
+
+/* التحميل */
+.loading-spinner {
+    background: var(--bg-tertiary);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    color: var(--text-primary);
+}
+
+.spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid var(--accent-color);
+}
+
+/* حالة عدم وجود قنوات */
+.no-channels {
+    background: var(--card-bg);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    color: var(--text-secondary);
+}
+
+/* التمرير */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-hover);
+}
+
+/* تحديد النص */
+::selection {
+    background: rgba(255, 107, 107, 0.3);
+    color: var(--text-primary);
+}
+
+::-moz-selection {
+    background: rgba(255, 107, 107, 0.3);
+    color: var(--text-primary);
+}
+
+/* تحسينات للوضع الفاتح */
+.channel-country {
+    color: var(--text-muted);
+}
+
+.channel-meta {
+    color: var(--text-secondary);
+}
+
+.legal-notice {
+    color: var(--text-muted);
+}
+
+.tagline {
+    color: var(--text-secondary);
+}

@@ -1,0 +1,318 @@
+/* css/animations.css */
+
+/* الحركات الأساسية */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%, 43% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* تطبيق الحركات */
+.app-container {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.header {
+    animation: slideInFromTop 0.5s ease-out;
+}
+
+.search-section {
+    animation: slideInFromTop 0.5s ease-out 0.1s both;
+}
+
+.categories-section {
+    animation: slideInFromTop 0.5s ease-out 0.2s both;
+}
+
+.channels-section {
+    animation: fadeIn 0.6s ease-out 0.3s both;
+}
+
+.footer {
+    animation: slideInFromBottom 0.5s ease-out 0.4s both;
+}
+
+/* حركات بطاقات القنوات */
+.channel-card {
+    animation: fadeIn 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.channel-card:nth-child(1) { animation-delay: 0.1s; }
+.channel-card:nth-child(2) { animation-delay: 0.15s; }
+.channel-card:nth-child(3) { animation-delay: 0.2s; }
+.channel-card:nth-child(4) { animation-delay: 0.25s; }
+.channel-card:nth-child(5) { animation-delay: 0.3s; }
+.channel-card:nth-child(6) { animation-delay: 0.35s; }
+.channel-card:nth-child(7) { animation-delay: 0.4s; }
+.channel-card:nth-child(8) { animation-delay: 0.45s; }
+.channel-card:nth-child(9) { animation-delay: 0.5s; }
+.channel-card:nth-child(10) { animation-delay: 0.55s; }
+
+/* حركات أزرار التصنيفات */
+.category-btn {
+    animation: scaleIn 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+.category-btn:nth-child(1) { animation-delay: 0.1s; }
+.category-btn:nth-child(2) { animation-delay: 0.15s; }
+.category-btn:nth-child(3) { animation-delay: 0.2s; }
+.category-btn:nth-child(4) { animation-delay: 0.25s; }
+.category-btn:nth-child(5) { animation-delay: 0.3s; }
+.category-btn:nth-child(6) { animation-delay: 0.35s; }
+
+/* حركات التفاعل */
+.channel-card:hover {
+    animation: pulse 0.3s ease;
+}
+
+.category-btn:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.favorite-btn:hover {
+    animation: bounce 0.5s ease;
+}
+
+.search-box input:focus {
+    animation: pulse 0.3s ease;
+}
+
+/* حركات المشغل */
+.player-modal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.player-container {
+    animation: scaleIn 0.3s ease-out;
+}
+
+/* حركات التحميل */
+.loading-spinner {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* حركات الإشعارات */
+@keyframes notificationSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes notificationSlideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.notification {
+    animation: notificationSlideIn 0.3s ease-out;
+}
+
+.notification.hiding {
+    animation: notificationSlideOut 0.3s ease-in;
+}
+
+/* حركات حالة القنوات */
+.channel-status.online {
+    position: relative;
+}
+
+.channel-status.online::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 6px;
+    height: 6px;
+    background: var(--success-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    animation: pulse 2s infinite;
+}
+
+/* حركات البحث */
+.search-box input:not(:placeholder-shown) {
+    animation: pulse 0.3s ease;
+}
+
+/* حركات الأزرار */
+.close-btn:hover {
+    animation: pulse 0.3s ease;
+}
+
+.quality-select:focus {
+    animation: shake 0.5s ease;
+}
+
+/* حركات التنقل */
+.channel-card:focus {
+    animation: pulse 0.3s ease;
+    outline: 2px solid var(--accent-color);
+}
+
+/* حركات التنبيه */
+@keyframes highlight {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(255, 107, 107, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.highlight {
+    animation: highlight 1s ease;
+}
+
+/* حركات الظهور التدريجي */
+.fade-in-up {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 0.5s ease-out;
+}
+
+/* حركات خاصة باللمس */
+@media (hover: none) and (pointer: coarse) {
+    .channel-card:active {
+        animation: scaleIn 0.2s ease;
+        transform: scale(0.95);
+    }
+    
+    .category-btn:active {
+        animation: scaleIn 0.2s ease;
+        transform: scale(0.95);
+    }
+}
+
+/* تحسينات الأداء للحركات */
+.channel-card,
+.category-btn,
+.favorite-btn {
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* التقليل من الحركة */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .channel-card,
+    .category-btn {
+        animation: none !important;
+        transition: none !important;
+    }
+}

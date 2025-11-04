@@ -1,0 +1,354 @@
+/* css/responsive.css */
+
+/* شاشات كبيرة (1200px فما فوق) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .channels-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+    
+    .channel-card {
+        padding: 25px;
+    }
+    
+    .header {
+        padding: 40px 0;
+    }
+    
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+/* أجهزة الكمبيوتر (1024px - 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .channels-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* الأجهزة اللوحية (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 720px;
+        padding: 0 15px;
+    }
+    
+    .channels-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .categories {
+        gap: 8px;
+    }
+    
+    .category-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        font-size: 2.2rem;
+    }
+    
+    .search-box input {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* الهواتف الكبيرة (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .channels-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .channel-card {
+        padding: 15px;
+    }
+    
+    .channel-logo {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .channel-name {
+        font-size: 1rem;
+    }
+    
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    
+    .category-btn {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .header {
+        padding: 25px 0;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .search-section {
+        padding: 20px 0;
+    }
+}
+
+/* الهواتف الصغيرة (480px فما دون) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .channels-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .channel-card {
+        padding: 15px;
+        margin: 0 5px;
+    }
+    
+    .channel-logo {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .channel-name {
+        font-size: 0.95rem;
+    }
+    
+    .channel-meta {
+        font-size: 0.8rem;
+    }
+    
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .category-btn {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+        border-radius: 8px;
+    }
+    
+    .header {
+        padding: 20px 0;
+        border-radius: 0;
+        margin-bottom: 15px;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+    }
+    
+    .search-section {
+        padding: 15px 0;
+    }
+    
+    .search-box input {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        border-radius: 25px;
+    }
+    
+    .footer {
+        padding: 20px 0;
+        font-size: 0.8rem;
+    }
+    
+    /* تحسينات المشغل على الهواتف */
+    .player-container video {
+        height: calc(100% - 60px);
+    }
+    
+    .player-controls {
+        padding: 10px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .quality-select {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .close-btn {
+        width: 100%;
+    }
+    
+    /* تحسينات التحميل */
+    .loading-spinner {
+        transform: scale(0.8);
+    }
+    
+    .spinner {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* الهواتف صغيرة جداً (360px فما دون) */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 8px;
+    }
+    
+    .channel-card {
+        padding: 12px;
+        margin: 0 2px;
+    }
+    
+    .channel-logo {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-btn {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    .search-box input {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+    }
+}
+
+/* التوجيه الأفقي للهواتف */
+@media (max-height: 500px) and (orientation: landscape) {
+    .header {
+        padding: 15px 0;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .search-section {
+        padding: 10px 0;
+    }
+    
+    .categories-section {
+        padding: 10px 0;
+    }
+    
+    .channels-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .channel-card {
+        padding: 10px;
+    }
+    
+    .channel-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    
+    .channel-name {
+        font-size: 0.8rem;
+    }
+}
+
+/* دعم اللمس عالي الدقة */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .channel-card {
+        border-width: 0.5px;
+    }
+    
+    .category-btn {
+        border-width: 0.5px;
+    }
+}
+
+/* التقليل من الحركة للمستخدمين الذين يفضلون ذلك */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .channel-card,
+    .category-btn {
+        transition: none !important;
+    }
+}
+
+/* الوضع المظلم التلقائي */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+
+/* الوضع الفاتح التلقائي */
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* الطباعة */
+@media print {
+    .player-modal,
+    .search-box,
+    .categories,
+    .favorite-btn {
+        display: none !important;
+    }
+    
+    .channel-card {
+        break-inside: avoid;
+        border: 1px solid #000 !important;
+        background: white !important;
+        color: black !important;
+    }
+}

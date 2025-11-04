@@ -1,0 +1,117 @@
+{
+    "version": "1.0.0",
+    "lastUpdate": "2024-01-01",
+    "channels": [
+        {
+            "id": 1,
+            "name": "قناة MBC 1",
+            "category": "entertainment",
+            "logo": "📺",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "قناة ترفيهية عامة",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-mbc1-ksa-2.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "قناة beIN SPORTS",
+            "category": "sports",
+            "logo": "⚽",
+            "language": "ar",
+            "country": "me",
+            "isActive": true,
+            "description": "القناة الرياضية الرائدة",
+            "streams": [
+                {
+                    "quality": "1080p",
+                    "url": "https://bein-six.akamaized.net/pls/interval.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "قناة العربية",
+            "category": "news",
+            "logo": "📰",
+            "language": "ar",
+            "country": "ae",
+            "isActive": true,
+            "description": "قناة إخبارية عربية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-alarabiya-ksa-2.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "قناة كارتون نتورك",
+            "category": "kids",
+            "logo": "🧸",
+            "language": "ar",
+            "country": "me",
+            "isActive": true,
+            "description": "قناة الأطفال والكرتون",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-cartoonar-ksa-2.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "قناة روتانا",
+            "category": "music",
+            "logo": "🎵",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "قناة الأغاني العربية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-rotana-ksa-2.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "قناة ناشيونال جيوغرافيك",
+            "category": "documentary",
+            "logo": "🌍",
+            "language": "ar",
+            "country": "me",
+            "isActive": true,
+            "description": "قناة الوثائقيات",
+            "streams": [
+                {
+                    "quality": "1080p",
+                    "url": "https://shls-nationalgeographic-ksa-2.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {"id": "all", "name": "الكل", "icon": "📺"},
+        {"id": "entertainment", "name": "ترفيه", "icon": "🎭"},
+        {"id": "sports", "name": "رياضة", "icon": "⚽"},
+        {"id": "news", "name": "أخبار", "icon": "📰"},
+        {"id": "kids", "name": "أطفال", "icon": "🧸"},
+        {"id": "music", "name": "موسيقى", "icon": "🎵"},
+        {"id": "documentary", "name": "وثائقيات", "icon": "🌍"}
+    ]
+}

@@ -1,0 +1,217 @@
+{
+    "channels": [
+        {
+            "id": 1,
+            "name": "قناة MBC 1",
+            "category": "entertainment",
+            "logo": "📺",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "قناة ترفيهية عامة",
+            "streams": [
+                {
+                    "quality": "480p",
+                    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                    "type": "mp4"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "قناة رياضية",
+            "category": "sports",
+            "logo": "⚽",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "قناة رياضية",
+            "streams": [
+                {
+                    "quality": "480p",
+                    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                    "type": "mp4"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "قناة أخبار",
+            "category": "news",
+            "logo": "📰",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "قناة إخبارية",
+            "streams": [
+                {
+                    "quality": "480p",
+                    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                    "type": "mp4"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "قناة العربية",
+            "category": "news",
+            "logo": "📺",
+            "language": "ar",
+            "country": "ae",
+            "isActive": true,
+            "description": "قناة إخبارية عربية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-arabiya-ae.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "قناة فرانس 24",
+            "category": "news",
+            "logo": "🌍",
+            "language": "ar",
+            "country": "fr",
+            "isActive": true,
+            "description": "قناة إخبارية فرنسية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://francais24-lh.akamaihd.net/i/f24arabic_1@325458/master.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "قناة DW عربية",
+            "category": "news",
+            "logo": "🇩🇪",
+            "language": "ar",
+            "country": "de",
+            "isActive": true,
+            "description": "قناة ألمانية ناطقة بالعربية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://dwamdstream102.akamaized.net/hls/live/2015530/dwstream102/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "قناة كورة",
+            "category": "sports",
+            "logo": "⚽",
+            "language": "ar",
+            "country": "me",
+            "isActive": true,
+            "description": "قناة رياضية متخصصة",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://edge1.iptvstream.site:8443/live/sport1/playlist.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "قناة الرياضية",
+            "category": "sports",
+            "logo": "🏆",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "البث الرياضي المباشر",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-alkass-qa.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "قناة كارتون نتورك",
+            "category": "kids",
+            "logo": "🧸",
+            "language": "ar",
+            "country": "me",
+            "isActive": true,
+            "description": "أفضل برامج الكرتون",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-cartoonar-ksa.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "قناة MBC مصر",
+            "category": "entertainment",
+            "logo": "🎭",
+            "language": "ar",
+            "country": "eg",
+            "isActive": true,
+            "description": "قناة ترفيهية مصرية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-mbc-eg.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "قناة ناشيونال جيوغرافيك",
+            "category": "documentary",
+            "logo": "🌍",
+            "language": "ar",
+            "country": "me",
+            "isActive": true,
+            "description": "قناة وثائقيات عالمية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-nationalgeographic-ksa.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "قناة روتانا",
+            "category": "music",
+            "logo": "🎵",
+            "language": "ar",
+            "country": "sa",
+            "isActive": true,
+            "description": "قناة الأغاني العربية",
+            "streams": [
+                {
+                    "quality": "720p",
+                    "url": "https://shls-rotana-ksa.akamaized.net/out/v1/df80dd3070a84b0b930e3331a2306e6d/index.m3u8",
+                    "type": "m3u8"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {"id": "all", "name": "الكل", "icon": "📺"},
+        {"id": "entertainment", "name": "ترفيه", "icon": "🎭"},
+        {"id": "sports", "name": "رياضة", "icon": "⚽"},
+        {"id": "news", "name": "أخبار", "icon": "📰"},
+        {"id": "kids", "name": "أطفال", "icon": "🧸"},
+        {"id": "music", "name": "موسيقى", "icon": "🎵"},
+        {"id": "documentary", "name": "وثائقيات", "icon": "🌍"}
+    ]
+}

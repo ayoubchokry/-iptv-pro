@@ -1,0 +1,14 @@
+{
+    "name": "IPTV Pro - البث المباشر",
+    "short_name": "IPTV Pro",
+    "description": "تطبيق متقدم لمشاهدة القنوات المباشرة",
+    "lang": "ar",
+    "dir": "rtl",
+    "start_url": "/iptv-project/",
+    "display": "standalone",
+    "theme_color": "#1e3c72",
+    "background_color": "#0f1a35",
+    "orientation": "any",
+    "scope": "/iptv-project/",
+    "categories": ["entertainment", "video"]
+}
